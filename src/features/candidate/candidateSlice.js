@@ -68,6 +68,7 @@ export const candidateSlice = createSlice({
             state.candidate = action.payload
             if(state.isSuccess == true){
                 toast.info("User Created successfully")
+                window.location.reload()
             }
         })
         .addCase(registerCandidate.rejected,(state,action)=>{
@@ -89,8 +90,8 @@ export const candidateSlice = createSlice({
             state.isSuccess = true
             state.logedCandidate = action.payload
             if(state.isSuccess == true){
-                console.log(state)
                 toast.info("User Logged In")
+                window.location.reload()
             }
         })
         .addCase(loginCandidate.rejected,(state,action)=>{
