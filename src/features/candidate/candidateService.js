@@ -17,6 +17,7 @@ const register = async (candidateData)=>{
 const login = async (candidateData)=>{
     const response = await axios.post(`${base_url}candidate/login`,candidateData)
     if(response.data){
+        localStorage.setItem('candidate',JSON.stringify(response.data))
         localStorage.setItem('token',JSON.stringify(response.data.token))
     }
     return response.data

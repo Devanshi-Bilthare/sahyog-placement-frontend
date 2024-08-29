@@ -60,7 +60,7 @@ const RegistrationForm = ({ toggleForm }) => {
     }
     dispatch(registerCandidate(formData))
     setTimeout(() => {
-      navigate('/profile')
+      navigate('/')
     }, 100);
   };
 

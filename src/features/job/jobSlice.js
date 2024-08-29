@@ -19,9 +19,9 @@ export const getSingleJob = createAsyncThunk('get-single-job',async(id,thunkApi)
     }
 })
 
-export const applyJob = createAsyncThunk('job/apply',async(id,thunkApi)=>{
+export const applyJob = createAsyncThunk('job/apply',async(data,thunkApi)=>{
     try{
-        return await jobService.applyJob(id)
+        return await jobService.applyJob(data)
     }catch(err){
         return thunkApi.rejectWithValue(err)
     }

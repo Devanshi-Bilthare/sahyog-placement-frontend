@@ -9,16 +9,18 @@ const JobDetails = () => {
   const params = useParams()
   const id = params.id
   const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const candidate = useSelector(state => state.candidate?.candidate)
   const handleApply = () => {
     if(isLoggedIn()){
-      dispatch(applyJob(id))
+      dispatch(applyJob({id,candidateId:candidate?._id}))
     }else{
       navigate('/login')
     }
   }
 
-  const dispatch = useDispatch()
   useEffect(()=>{
+
     dispatch(getSingleJob(id))
     dispatch(isAlreadyApplied(id))
   },[])

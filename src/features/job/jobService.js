@@ -14,8 +14,8 @@ const getSingleJob = async (id)=>{
     return response.data
 }
 
-const applyJob = async(id)=>{
-    const response = await axios.post(`${base_url}apply/`,{jobId : id},config)
+const applyJob = async(data)=>{
+    const response = await axios.post(`${base_url}apply/`,{jobId : data.id,candidateId:data.candidateId},config)
     return response.data
 }
 

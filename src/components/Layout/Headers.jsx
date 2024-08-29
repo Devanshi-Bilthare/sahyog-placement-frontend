@@ -6,11 +6,14 @@ import './Header.css'
 import Form from 'react-bootstrap/Form';
 import { Button, Col, Row } from 'react-bootstrap';
 import { isLoggedIn } from '../../utils/config';
+import { useNavigate } from 'react-router-dom';
 
 
 function Headers() {
+  const navigate = useNavigate()
   const LoggedOut = () => {
     localStorage.clear();
+    navigate('/')
   }
   return (
     <Navbar expand="lg" className=" nav pt-3 pb-3 position-sticky sticky-top bg-white">

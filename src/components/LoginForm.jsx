@@ -22,7 +22,7 @@ const LoginForm = ({ toggleForm }) => {
        dispatch(loginCandidate(formData))
 
         setTimeout(() => {
-            navigate('/profile')
+            navigate('/')
         }, 1000);
     };
 
