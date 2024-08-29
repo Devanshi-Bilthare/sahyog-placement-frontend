@@ -23,6 +23,7 @@ const LoginForm = ({ toggleForm }) => {
 
         setTimeout(() => {
             navigate('/')
+            window.location.reload()
         }, 1000);
     };
 

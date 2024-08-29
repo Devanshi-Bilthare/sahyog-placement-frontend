@@ -36,38 +36,49 @@ const RegistrationForm = ({ toggleForm }) => {
     tenthBoardName: "",
     tenthSchoolName: "",
     dob: "",
+    resumeUrl:"",
     twoWheelerAvailable: false,
     drivingLicense: false,
   });
 
   const handleChange = (e) => {
-    const {type, files } = e.target;
-    if(type == file){
-      setFile(files[0]);
-    }else{
-      setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { type, name, value, files } = e.target;
+
+    if (type === 'file') {
+        // File handling: update state to the selected file
+        setFormData({ ...formData, [name]: files[0] });
+    } else {
+        // Other input handling
+        setFormData({ ...formData, [name]: value });
     }
-  };
+};
 
   const handleCheckboxChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.checked });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (file) {
-      formData.append('resumeUrl', file);
+
+    // Use FormData to handle file upload
+    const formDataToSend = new FormData();
+    Object.keys(formData).forEach((key) => {
+        formDataToSend.append(key, formData[key]);
+    });
+
+    try {
+        await dispatch(registerCandidate(formDataToSend)); // Ensure this action handles FormData
+        navigate('/');
+        window.location.reload()
+    } catch (error) {
+        console.error('Error submitting form:', error);
     }
-    dispatch(registerCandidate(formData))
-    setTimeout(() => {
-      navigate('/')
-    }, 100);
-  };
+};
 
   return (
     <div className="Register pt-5 pb-5">
       <div className="form-container shadow-lg " id="register-form">
-        <form  onSubmit={handleSubmit}>
+        <form  onSubmit={handleSubmit} >
           <h2 className="register_heading">Register Now...</h2>
           <div className="d-flex">
             <div className="form-group w-100 mr-3">
@@ -430,16 +441,15 @@ const RegistrationForm = ({ toggleForm }) => {
                   <textarea name="" id="" placeholder="Enter your skills..." className="w-100 border"></textarea>
                 </div>
 
-                {/* <div className="form-group w-100">
-                  <label htmlFor="resume">Upload Resume</label>
-                  <input
-                    type="file"
-                    name="resumeUrl"
-                    id="resume"
-                    value={formData.resume}
-                    onChange={handleChange}
-                  />
-                </div> */}
+                <div className="form-group w-100">
+    <label htmlFor="resume">Upload Resume</label>
+    <input
+        type="file"
+        name="resumeUrl"
+        id="resume"
+        onChange={handleChange}
+    />
+</div>
 
 <div className="register-fields">
             <div className="form-group">
