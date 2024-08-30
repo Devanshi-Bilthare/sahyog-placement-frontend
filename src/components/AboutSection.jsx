@@ -1,12 +1,18 @@
-// import React from 'react';
-// import './AboutSection.css'; // Import any necessary CSS file
+import React from 'react';
+
+// Importing images
+import pattern5 from '../assets/images/shape/pattern-5.png';
+import aboutImage from '../assets/images/resource/about-1.jpg';
+import icon3 from '../assets/images/icons/icon-3.png';
+import authorThumb from '../assets/images/resource/author-1.png';
+import signatureImage from '../assets/images/icons/signature-1.png';
 
 const AboutSection = () => {
   return (
     <section className="about-section">
       <div
         className="pattern-layer"
-        style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-5.png)' }}
+        style={{ backgroundImage: `url(${pattern5})` }}
       ></div>
       <div className="auto-container">
         <div className="inner-container">
@@ -15,11 +21,11 @@ const AboutSection = () => {
               <div id="content_block_2">
                 <div className="content-box centred">
                   <figure className="image-box">
-                    <img src="/src/assets/images/resource/about-1.jpg" alt="About Us" />
+                    <img src={aboutImage} alt="About Us" />
                   </figure>
                   <div className="inner-box">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-3.png" alt="Icon" />
+                      <img src={icon3} alt="Icon" />
                     </figure>
                     <h3>
                       Educational Resources <br /> for Job Seekers
@@ -37,12 +43,12 @@ const AboutSection = () => {
                   <div className="sec-title">
                     <span className="top-title">Learn About Us</span>
                     <h2>
-                    Our Staffing Partners: Trustworthy & Cost-Effective Recruitment Solutions
+                      Our Staffing Partners: Trustworthy & Cost-Effective Recruitment Solutions
                     </h2>
                   </div>
                   <div className="text">
                     <p>
-                    It’s well known that the design and layout of a page can capture a reader's attention. Using placeholders like Lorem Ipsum helps maintain a balanced distribution of text elements.
+                      It’s well known that the design and layout of a page can capture a reader's attention. Using placeholders like Lorem Ipsum helps maintain a balanced distribution of text elements.
                     </p>
                   </div>
                   <div className="link">
@@ -56,12 +62,12 @@ const AboutSection = () => {
                     </div>
                     <div className="author-info">
                       <figure className="author-thumb">
-                        <img src="/src/assets/images/resource/author-1.png" alt="Author" />
+                        <img src={authorThumb} alt="Author" />
                       </figure>
                       <h4>Daniel Primera</h4>
                       <span className="designation">Founder</span>
                       <figure className="signature">
-                        <img src="/src/assets/images/icons/signature-1.png" alt="Signature" />
+                        <img src={signatureImage} alt="Signature" />
                       </figure>
                     </div>
                   </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllJob } from "../features/job/jobSlice";
 import { Link } from "react-router-dom";
-
+import logo from '../assets/images/resource/logo-1.png';
 const JobOpenings = () => {
   const dispatch = useDispatch()
   const [searchRole, setSearchRole] = useState("");
@@ -138,7 +138,7 @@ const JobOpenings = () => {
                   location={jobDetails.jobLocation}
                   salary={jobDetails.salary}
                   experience={jobDetails.experienceRequired}
-                  logo="/src/assets/images/resource/logo-1.png"
+                  logo={logo}
                   id={jobDetails._id}
                 />
               ) : null
@@ -276,7 +276,7 @@ const JobOpenings = () => {
 };
 
 const JobPost = ({ posted, title, location, salary, experience, logo ,id}) => {
- 
+
   return (
     <div className="single-job-post">
       <div className="job-header clearfix">
@@ -316,7 +316,7 @@ const JobPost = ({ posted, title, location, salary, experience, logo ,id}) => {
         </div>
         <div className="apply-btn">
           <Link to={`/job-details/${id}`}>Apply</Link>
-          
+
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const WelcomeSection = () => {
                 <div className="sec-title centred">
                     <span className="top-title">Welcome to Sahyog Placement</span>
                     <h2>Your Trusted Partner in Modern Staffing Solutions</h2>
-                    <p>It's well known that the layout of a page can capture attention, drawing focus to what truly matters. <br />readable content of a page.</p>
+                    <p>It's well known that the layout of a page can capture attention, drawing focus to what truly matters. <br />Readable content of a page.</p>
                 </div>
                 <div className="row clearfix">
                     <div className="col-lg-6 col-md-12 col-sm-12 image-column">
@@ -29,7 +29,6 @@ const WelcomeSection = () => {
                                         <ul className="tab-btns tab-buttons clearfix">
                                             <li
                                                 className={`tab-btn ${activeTab === '#tab-1' ? 'active-btn' : ''}`}
-                                                data-tab="#tab-1"
                                                 onClick={() => handleTabClick('#tab-1')}
                                             >
                                                 <i className="employ-icon flaticon-businessman"></i>
@@ -37,8 +36,7 @@ const WelcomeSection = () => {
                                                 <i className="arrow-icon flaticon-up-arrow-2"></i>
                                             </li>
                                             <li
-                                                className={`tab-btn ${activeTab === '#tab-2' ? '' : ''}`}
-                                                data-tab="#tab-2"
+                                                className={`tab-btn ${activeTab === '#tab-2' ? 'active-btn' : ''}`}
                                                 onClick={() => handleTabClick('#tab-2')}
                                             >
                                                 <i className="employ-icon flaticon-employer"></i>

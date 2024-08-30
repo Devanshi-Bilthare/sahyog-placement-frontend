@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 // import './ApplyNow.css'; // Assuming you have a corresponding CSS file for styles
-import pattern35 from '/src/assets/images/shape/pattern-35.png';
-import pageTitle2 from '/src/assets/images/background/page-title-2.jpg';
-import icon64 from '/src/assets/images/icons/icon-64.png';
-import icon65 from '/src/assets/images/icons/icon-65.png';
-import clientLogo13 from '/src/assets/images/clients/clients-logo-13.png';
-import clientLogo14 from '/src/assets/images/clients/clients-logo-14.png';
-import clientLogo15 from '/src/assets/images/clients/clients-logo-15.png';
-import clientLogo16 from '/src/assets/images/clients/clients-logo-16.png';
-import clientLogo17 from '/src/assets/images/clients/clients-logo-17.png';
-import clientLogo18 from '/src/assets/images/clients/clients-logo-18.png';
+import pattern35 from '../assets/images/shape/pattern-35.png';
+import pageTitle2 from '../assets/images/background/page-title-2.jpg';
+import icon64 from '../assets/images/icons/icon-64.png';
+import icon65 from '../assets/images/icons/icon-65.png';
+import clientLogo13 from '../assets/images/clients/clients-logo-13.png';
+import clientLogo14 from '../assets/images/clients/clients-logo-14.png';
+import clientLogo15 from '../assets/images/clients/clients-logo-15.png';
+import clientLogo16 from '../assets/images/clients/clients-logo-16.png';
+import clientLogo17 from '../assets/images/clients/clients-logo-17.png';
+import clientLogo18 from '../assets/images/clients/clients-logo-18.png';
 
 const ApplyNow = () => {
   const [basicInfo, setBasicInfo] = useState({

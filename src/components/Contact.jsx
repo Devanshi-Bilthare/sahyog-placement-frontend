@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Importing images
+import pageTitleBg from '../assets/images/background/page-title-2.jpg';
+import pattern35 from '../assets/images/shape/pattern-35.png';
+import iconLocation from '../assets/images/icons/icon-39.png';
+import iconContact from '../assets/images/icons/icon-40.png';
+import iconHours from '../assets/images/icons/icon-41.png';
+import pattern50 from '../assets/images/shape/pattern-50.png';
+import clientsBg from '../assets/images/background/clients-1.jpg';
+import clientLogo7 from '../assets/images/clients/clients-logo-7.png';
+import clientLogo8 from '../assets/images/clients/clients-logo-8.png';
+import clientLogo9 from '../assets/images/clients/clients-logo-9.png';
+import clientLogo10 from '../assets/images/clients/clients-logo-10.png';
+import clientLogo11 from '../assets/images/clients/clients-logo-11.png';
+import clientLogo12 from '../assets/images/clients/clients-logo-12.png';
+import { useDispatch } from 'react-redux';
+import { contact } from '../features/contact/contactSlice';
+
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
+    
+      const handleChange = (e) => {
+        setFormData({
+          ...formData,
+          [e.target.name]: e.target.value,
+        });
+      };
+
+      const dispatch = useDispatch()
+      const handleSubmit = async (e) => {
+        dispatch(contact(formData))
+        e.preventDefault();
+        
+      };
     return (
         <div>
             {/* Page Title */}
-            <section className="page-title" style={{ backgroundImage: 'url(/src/assets/images/background/page-title-2.jpg)' }}>
-                <div className="pattern-layer" style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-35.png)' }}></div>
+            <section className="page-title" style={{ backgroundImage: `url(${pageTitleBg})` }}>
+                <div className="pattern-layer" style={{ backgroundImage: `url(${pattern35})` }}></div>
                 <div className="auto-container">
                     <div className="content-box">
                         <div className="title-box centred">
@@ -35,14 +73,14 @@ const Contact = () => {
                                     </div>
                                     <ul className="info-list clearfix">
                                         <li>
-                                            <figure className="icon-box"><img src="/src/assets/images/icons/icon-39.png" alt="Location" /></figure>
+                                            <figure className="icon-box"><img src={iconLocation} alt="Location" /></figure>
                                             <div className="inner">
                                                 <h4>Location</h4>
                                                 <p>India <br />Sahyog Placement Office<br />Mumbai, Maharashtra 400001</p>
                                             </div>
                                         </li>
                                         <li>
-                                            <figure className="icon-box"><img src="/src/assets/images/icons/icon-40.png" alt="Contact" /></figure>
+                                            <figure className="icon-box"><img src={iconContact} alt="Contact" /></figure>
                                             <div className="inner">
                                                 <h4>Call or Email</h4>
                                                 <p>
@@ -52,7 +90,7 @@ const Contact = () => {
                                             </div>
                                         </li>
                                         <li>
-                                            <figure className="icon-box"><img src="/src/assets/images/icons/icon-41.png" alt="Hours" /></figure>
+                                            <figure className="icon-box"><img src={iconHours} alt="Hours" /></figure>
                                             <div className="inner">
                                                 <h4>Office Hours</h4>
                                                 <p>Mon - Sat: 9:00 AM to 7:00 PM<br />Sunday: Closed</p>
@@ -65,18 +103,21 @@ const Contact = () => {
                         <div className="col-lg-8 col-md-12 col-sm-12 form-column">
                             <div className="form-inner">
                                 <h2>How Can We Assist You?</h2>
-                                <form method="post" action="https://yourwebsite.com/sendemail.php" id="contact-form" className="default-form">
+                                <form onSubmit={handleSubmit}  id="contact-form" className="default-form">
                                     <div className="row clearfix">
                                         <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="Your Name *" required />
+                                            <input type="text" name="name" placeholder="Your Name *"  value={formData.name}
+            onChange={handleChange} required />
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email" placeholder="Email Address *" required />
+                                            <input type="email" name="email" placeholder="Email Address *" required  value={formData.email}
+            onChange={handleChange} />
                                         </div>
                                         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" required placeholder="Phone *" />
+                                            <input type="text" name="phone" required placeholder="Phone *"   value={formData.phone}
+            onChange={handleChange} />
                                         </div>
-                                        <div className="col-lg-6 col-md-12 col-sm-12 form-group">
+                                        {/* <div className="col-lg-6 col-md-12 col-sm-12 form-group">
                                             <div className="select-box">
                                                 <select className="wide">
                                                     <option data-display="Service Required">Service Required</option>
@@ -86,12 +127,16 @@ const Contact = () => {
                                                     <option value="4">Other Inquiries</option>
                                                 </select>
                                             </div>
+                                        </div> */}
+                                        <div className="col-lg-12 col-md-12 col-sm-12 form-group">
+                                            <input type="text" name="subject" required placeholder="Subject" value={formData.subject}
+            onChange={handleChange}
+ />
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="subject" required placeholder="Subject" />
-                                        </div>
-                                        <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea name="message" placeholder="Your Message ..."></textarea>
+                                            <textarea name="message" placeholder="Your Message ..." value={formData.message}
+            onChange={handleChange}
+></textarea>
                                         </div>
                                         <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
                                             <button className="theme-btn-one" type="submit" name="submit-form">Submit</button>
@@ -105,8 +150,8 @@ const Contact = () => {
             </section>
 
             {/* Locations Section */}
-            <section className="locations-section bg-color-2">
-                <div className="pattern-layer" style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-50.png)' }}></div>
+            {/* <section className="locations-section bg-color-2">
+                <div className="pattern-layer" style={{ backgroundImage: `url(${pattern50})` }}></div>
                 <div className="auto-container">
                     <div className="row clearfix">
                         <div className="col-lg-4 col-md-6 col-sm-12 single-column">
@@ -177,10 +222,10 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Clients Section */}
-            <section className="clients-style-two" style={{ backgroundImage: 'url(/src/assets/images/background/clients-1.jpg)' }}>
+            {/* <section className="clients-style-two" style={{ backgroundImage: `url(${clientsBg})` }}>
                 <div className="auto-container">
                     <div className="title-inner centred">
                         <h2>Looking for the Right Talent or the Right Job?</h2>
@@ -191,26 +236,26 @@ const Contact = () => {
                     </div>
                     <div className="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-7.png" alt="Client 1" /></Link>
+                            <Link to="/"><img src={clientLogo7} alt="Client 1" /></Link>
                         </figure>
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-8.png" alt="Client 2" /></Link>
+                            <Link to="/"><img src={clientLogo8} alt="Client 2" /></Link>
                         </figure>
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-9.png" alt="Client 3" /></Link>
+                            <Link to="/"><img src={clientLogo9} alt="Client 3" /></Link>
                         </figure>
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-10.png" alt="Client 4" /></Link>
+                            <Link to="/"><img src={clientLogo10} alt="Client 4" /></Link>
                         </figure>
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-11.png" alt="Client 5" /></Link>
+                            <Link to="/"><img src={clientLogo11} alt="Client 5" /></Link>
                         </figure>
                         <figure className="clients-logo-box">
-                            <Link to="/"><img src="/src/assets/images/clients/clients-logo-12.png" alt="Client 6" /></Link>
+                            <Link to="/"><img src={clientLogo12} alt="Client 6" /></Link>
                         </figure>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 }

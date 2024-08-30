@@ -1,9 +1,24 @@
 import React from 'react';
 
+// Importing images
+import pattern7 from '../assets/images/shape/pattern-7.png';
+import icon10 from '../assets/images/icons/icon-10.png';
+import icon11 from '../assets/images/icons/icon-11.png';
+import icon12 from '../assets/images/icons/icon-12.png';
+import icon13 from '../assets/images/icons/icon-13.png';
+import icon14 from '../assets/images/icons/icon-14.png';
+import icon15 from '../assets/images/icons/icon-15.png';
+import industries1 from '../assets/images/resource/industries-1.jpg';
+import industries2 from '../assets/images/resource/industries-2.jpg';
+import industries3 from '../assets/images/resource/industries-3.jpg';
+import industries4 from '../assets/images/resource/industries-4.jpg';
+import industries5 from '../assets/images/resource/industries-5.jpg';
+import industries6 from '../assets/images/resource/industries-6.jpg';
+
 const IndustriesSection = () => {
   return (
     <section className="industries-section bg-color-1">
-      <div className="pattern-layer" style={{ backgroundImage: "url(/src/assets/images/shape/pattern-7.png)" }}></div>
+      <div className="pattern-layer" style={{ backgroundImage: `url(${pattern7})` }}></div>
       <div className="auto-container">
         <div className="tabs-box">
           <div className="row clearfix">
@@ -16,37 +31,37 @@ const IndustriesSection = () => {
                 <ul className="tab-btns tab-buttons clearfix">
                   <li className="tab-btn active-btn" data-tab="#tab-1">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-10.png" alt="Logistics & Services" />
+                      <img src={icon10} alt="Logistics & Services" />
                     </figure>
                     <h3>Logistics & Services</h3>
                   </li>
                   <li className="tab-btn" data-tab="#tab-2">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-11.png" alt="Hospitality" />
+                      <img src={icon11} alt="Hospitality" />
                     </figure>
                     <h3>Hospitality</h3>
                   </li>
                   <li className="tab-btn" data-tab="#tab-3">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-12.png" alt="Manufacturing" />
+                      <img src={icon12} alt="Manufacturing" />
                     </figure>
                     <h3>Manufacturing</h3>
                   </li>
                   <li className="tab-btn" data-tab="#tab-4">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-13.png" alt="Education & Government" />
+                      <img src={icon13} alt="Education & Government" />
                     </figure>
                     <h3>Education & Government</h3>
                   </li>
                   <li className="tab-btn" data-tab="#tab-5">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-14.png" alt="Software/IT" />
+                      <img src={icon14} alt="Software/IT" />
                     </figure>
                     <h3>Software/IT</h3>
                   </li>
                   <li className="tab-btn" data-tab="#tab-6">
                     <figure className="icon-box">
-                      <img src="/src/assets/images/icons/icon-15.png" alt="Front Line Support" />
+                      <img src={icon15} alt="Front Line Support" />
                     </figure>
                     <h3>Front Line Support</h3>
                   </li>
@@ -58,7 +73,7 @@ const IndustriesSection = () => {
                 <div className="tab active-tab" id="tab-1">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-1.jpg" alt="Logistics & Services" />
+                      <img src={industries1} alt="Logistics & Services" />
                     </figure>
                     <div className="content-box">
                       <div className="text">
@@ -77,7 +92,7 @@ const IndustriesSection = () => {
                 <div className="tab" id="tab-2">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-2.jpg" alt="Hospitality" />
+                      <img src={industries2} alt="Hospitality" />
                     </figure>
                     <div className="content-box">
                       <div className="text">
@@ -96,7 +111,7 @@ const IndustriesSection = () => {
                 <div className="tab" id="tab-3">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-3.jpg" alt="Manufacturing" />
+                      <img src={industries3} alt="Manufacturing" />
                     </figure>
                     <div className="content-box">
                       <div className="text">
@@ -115,7 +130,7 @@ const IndustriesSection = () => {
                 <div className="tab" id="tab-4">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-4.jpg" alt="Education & Government" />
+                      <img src={industries4} alt="Education & Government" />
                     </figure>
                     <div className="content-box">
                       <div className="text">
@@ -134,7 +149,7 @@ const IndustriesSection = () => {
                 <div className="tab" id="tab-5">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-5.jpg" alt="Software/IT" />
+                      <img src={industries5} alt="Software/IT" />
                     </figure>
                     <div className="content-box">
                       <div className="text">
@@ -153,7 +168,7 @@ const IndustriesSection = () => {
                 <div className="tab" id="tab-6">
                   <div className="inner-box">
                     <figure className="image-box">
-                      <img src="/src/assets/images/resource/industries-6.jpg" alt="Front Line Support" />
+                      <img src={industries6} alt="Front Line Support" />
                     </figure>
                     <div className="content-box">
                       <div className="text">

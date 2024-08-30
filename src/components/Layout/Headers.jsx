@@ -53,9 +53,12 @@ function Headers() {
                 <NavDropdown.Item href="/placejob">Place job</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Candidate" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/edit">Profile</NavDropdown.Item>
-                <NavDropdown.Item href="/apply">My Jobs</NavDropdown.Item>
-                <NavDropdown.Item href="/job-openings">Job Opening</NavDropdown.Item>
+              <NavDropdown.Item href="/job-openings">Job Opening</NavDropdown.Item>
+              <NavDropdown.Item href="/apply">My Jobs</NavDropdown.Item>
+                <NavDropdown.Item href="/edit">Edit Profile</NavDropdown.Item>
+                <NavDropdown.Item href="/detail">Profile Detail</NavDropdown.Item>
+
+
               </NavDropdown>
               <Nav.Link href="/contact">Contact</Nav.Link>
               <div className="Register_btn">

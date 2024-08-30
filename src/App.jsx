@@ -29,6 +29,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Headers from './components/Layout/Headers'
 import EditProfile from './components/EditProfile';
 import ApplyDetailTable from './components/ApplyDetailTable';
+import ProfileDetail from './components/ProfileDetail';
+
+
 function App() {
 
 
@@ -52,13 +55,7 @@ function App() {
   <Route path="/profile" element={<ProfilePage />} />
   <Route path="/edit" element={<EditProfile />} />
   <Route path="/apply" element={<ApplyDetailTable />} />
-
-
-
-
-
-
-
+  <Route path="/detail" element={<ProfileDetail />} />
 
 </Routes>
 <Footer />

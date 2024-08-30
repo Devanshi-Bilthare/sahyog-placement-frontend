@@ -1,14 +1,14 @@
 import React from 'react';
 import BannerSection from './BannerSection'
-import ClientsSection from './ClientsSection'
+// import ClientsSection from './ClientsSection'
 import AboutSection from './AboutSection'
 // import BannerSection from './BannerSection'
 import WelcomeSection from './WelcomeSection'
 import RecruitmentTechnology from './RecruitmentTechnology';
 import IndustriesSection from './IndustriesSection';
 import ProcessSection from './ProcessSection';
-import TeamSection from './TeamSection';
-import NewsSection from './NewsSection';
+// import TeamSection from './TeamSection';
+// import NewsSection from './NewsSection';
 import TestimonialSection from './TestimonialSection';
 import ServiceSection from './ServiceSection';
 
@@ -23,8 +23,8 @@ const HomePage = () => {
         <RecruitmentTechnology />
         <IndustriesSection />
         <ProcessSection />
-        <TeamSection />
-        < NewsSection/>
+        {/* <TeamSection /> */}
+        {/* < NewsSection/> */}
         <TestimonialSection />
 
 

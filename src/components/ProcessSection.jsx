@@ -1,5 +1,12 @@
 import React from 'react';
 
+// Import images
+import icon16 from '../assets/images/icons/icon-16.png';
+import icon17 from '../assets/images/icons/icon-17.png';
+import icon18 from '../assets/images/icons/icon-18.png';
+import pattern8 from '../assets/images/shape/pattern-8.png';
+import animIcon2 from '../assets/images/icons/anim-icon-2.png';
+
 const ProcessSection = () => {
   return (
     <section className="process-section centered">
@@ -20,20 +27,20 @@ const ProcessSection = () => {
             >
               <div className="inner-box">
                 <figure className="icon-box">
-                  <img src="/src/assets/images/icons/icon-16.png" alt="Step 1 Icon" />
+                  <img src={icon16} alt="Step 1 Icon" />
                   <span>01</span>
                   <div className="anim-icon">
                     <div
                       className="icon-1"
-                      style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-8.png)' }}
+                      style={{ backgroundImage: `url(${pattern8})` }}
                     ></div>
                     <div
                       className="icon-2 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                     <div
                       className="icon-3 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                   </div>
                 </figure>
@@ -53,20 +60,20 @@ const ProcessSection = () => {
             >
               <div className="inner-box">
                 <figure className="icon-box">
-                  <img src="/src/assets/images/icons/icon-17.png" alt="Step 2 Icon" />
+                  <img src={icon17} alt="Step 2 Icon" />
                   <span>02</span>
                   <div className="anim-icon">
                     <div
                       className="icon-1"
-                      style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-8.png)' }}
+                      style={{ backgroundImage: `url(${pattern8})` }}
                     ></div>
                     <div
                       className="icon-2 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                     <div
                       className="icon-3 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                   </div>
                 </figure>
@@ -86,20 +93,20 @@ const ProcessSection = () => {
             >
               <div className="inner-box">
                 <figure className="icon-box">
-                  <img src="/src/assets/images/icons/icon-18.png" alt="Step 3 Icon" />
+                  <img src={icon18} alt="Step 3 Icon" />
                   <span>03</span>
                   <div className="anim-icon">
                     <div
                       className="icon-1"
-                      style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-8.png)' }}
+                      style={{ backgroundImage: `url(${pattern8})` }}
                     ></div>
                     <div
                       className="icon-2 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                     <div
                       className="icon-3 rotate-me"
-                      style={{ backgroundImage: 'url(/src/assets/images/icons/anim-icon-2.png)' }}
+                      style={{ backgroundImage: `url(${animIcon2})` }}
                     ></div>
                   </div>
                 </figure>

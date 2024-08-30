@@ -1,12 +1,27 @@
 import React from 'react';
 
+// Import images
+import animIcon1 from '../assets/images/icons/anim-icon-1.png';
+import service1 from '../assets/images/service/service-1.jpg';
+import service2 from '../assets/images/service/service-2.jpg';
+import service3 from '../assets/images/service/service-3.jpg';
+import service4 from '../assets/images/service/service-4.jpg';
+import service5 from '../assets/images/service/service-5.jpg';
+import service6 from '../assets/images/service/service-6.jpg';
+import icon4 from '../assets/images/icons/icon-4.png';
+import icon5 from '../assets/images/icons/icon-5.png';
+import icon6 from '../assets/images/icons/icon-6.png';
+import icon61 from '../assets/images/icons/icon-61.png';
+import icon62 from '../assets/images/icons/icon-62.png';
+import icon63 from '../assets/images/icons/icon-63.png';
+
 const ServiceSection = () => {
   return (
     <section className="service-section service-page">
       <div className="anim-icon">
         <div
           className="icon-1"
-          style={{ backgroundImage: "url(/src/assets/images/icons/anim-icon-1.png)" }}
+          style={{ backgroundImage: `url(${animIcon1})` }}
         ></div>
         <div className="icon-2"></div>
       </div>
@@ -23,13 +38,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-1.jpg" alt="Temporary Staffing" />
+                  <img src={service1} alt="Temporary Staffing" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-4.png" alt="Temporary Staffing Icon" />
+                        <img src={icon4} alt="Temporary Staffing Icon" />
                       </figure>
                       <h4>Temporary Staffing</h4>
                     </div>
@@ -53,13 +68,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-2.jpg" alt="Direct Hire" />
+                  <img src={service2} alt="Direct Hire" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-5.png" alt="Direct Hire Icon" />
+                        <img src={icon5} alt="Direct Hire Icon" />
                       </figure>
                       <h4>Direct Hire</h4>
                     </div>
@@ -83,13 +98,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-3.jpg" alt="Contract Staffing" />
+                  <img src={service3} alt="Contract Staffing" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-6.png" alt="Contract Staffing Icon" />
+                        <img src={icon6} alt="Contract Staffing Icon" />
                       </figure>
                       <h4>Contract Staffing</h4>
                     </div>
@@ -113,13 +128,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-4.jpg" alt="Payrolling" />
+                  <img src={service4} alt="Payrolling" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-61.png" alt="Payrolling Icon" />
+                        <img src={icon61} alt="Payrolling Icon" />
                       </figure>
                       <h4>Payrolling</h4>
                     </div>
@@ -143,13 +158,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-5.jpg" alt="Training" />
+                  <img src={service5} alt="Training" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-62.png" alt="Training Icon" />
+                        <img src={icon62} alt="Training Icon" />
                       </figure>
                       <h4>Training</h4>
                     </div>
@@ -173,13 +188,13 @@ const ServiceSection = () => {
             <div className="service-block-one">
               <div className="inner-box">
                 <figure className="image-box">
-                  <img src="/src/assets/images/service/service-6.jpg" alt="Executive Search" />
+                  <img src={service6} alt="Executive Search" />
                 </figure>
                 <div className="lower-content">
                   <div className="content-box">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-63.png" alt="Executive Search Icon" />
+                        <img src={icon63} alt="Executive Search Icon" />
                       </figure>
                       <h4>Executive Search</h4>
                     </div>

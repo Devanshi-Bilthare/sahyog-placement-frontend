@@ -6,6 +6,13 @@ import { TiDelete } from "react-icons/ti";
 import { useDispatch } from 'react-redux';
 import { registerCompany } from '../features/company/companySlice';
 
+// Importing images
+import pageTitleBg from '../assets/images/background/page-title-2.jpg';
+import patternLayer from '../assets/images/shape/pattern-35.png';
+import companyIcon from '../assets/images/icons/icon-58.png';
+import contactPersonIcon from '../assets/images/icons/icon-59.png';
+import requestTalentIcon from '../assets/images/icons/icon-60.png';
+
 const PlaceJob = () => {
     const dispatch = useDispatch()
     const [formData, setFormData] = useState({
@@ -57,8 +64,8 @@ const PlaceJob = () => {
     return (
         <>
             {/* Page Title */}
-            <section className="page-title pb-0" style={{ backgroundImage: 'url(/src/assets/images/background/page-title-2.jpg)' }}>
-                <div className="pattern-layer" style={{ backgroundImage: 'url(/src/assets/images/shape/pattern-35.png)' }}></div>
+            <section className="page-title pb-0" style={{ backgroundImage: `url(${pageTitleBg})` }}>
+                <div className="pattern-layer" style={{ backgroundImage: `url(${patternLayer})` }}></div>
                 <div className="auto-container">
                     <div className="content-box">
                         <div className="title-box centred">
@@ -88,7 +95,7 @@ const PlaceJob = () => {
                         <div className="col-lg-6 col-md-12 col-sm-12 form-column">
                             <div className="form-inner">
                                 <div className="title-inner">
-                                    <figure className="icon-box"><img src="/src/assets/images/icons/icon-58.png" alt="" /></figure>
+                                    <figure className="icon-box"><img src={companyIcon} alt="Company Icon" /></figure>
                                     <h2>Company Details</h2>
                                     <p>Please fill out your company details here.</p>
                                 </div>
@@ -113,7 +120,7 @@ const PlaceJob = () => {
                         <div className="col-lg-6 col-md-12 col-sm-12 form-column">
                             <div className="form-inner">
                                 <div className="title-inner">
-                                    <figure className="icon-box"><img src="/src/assets/images/icons/icon-59.png" alt="" /></figure>
+                                    <figure className="icon-box"><img src={contactPersonIcon} alt="Contact Person Icon" /></figure>
                                     <h2>Contact Person</h2>
                                     <p>Please fill out your contact person details here.</p>
                                 </div>
@@ -136,7 +143,7 @@ const PlaceJob = () => {
                             <div className="form-inner">
                                 <div className="title-inner d-flex justify-content-between">
                                     <div>
-                                        <figure className="icon-box"><img src="/src/assets/images/icons/icon-60.png" alt="" /></figure>
+                                        <figure className="icon-box"><img src={requestTalentIcon} alt="Request Talent Icon" /></figure>
                                         <h2>Request Talent</h2>
                                         <p>Here you can leave your job details & Submit your job post.</p>
                                     </div>

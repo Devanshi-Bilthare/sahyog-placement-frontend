@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { applyJob, getSingleJob, isAlreadyApplied } from "../features/job/jobSlice";
 import { isLoggedIn } from "../utils/config";
 import { toast } from "react-toastify";
-
+import logo from '../assets/images/resource/logo-7.png';
 const JobDetails = () => {
   const params = useParams()
   const id = params.id
@@ -62,7 +62,7 @@ const JobDetails = () => {
                 <div className="upper-box">
                   <div className="inner-box">
                     <figure className="company-logo">
-                      <img src="/src/assets/images/resource/logo-7.png" alt="Company Logo" />
+                      <img src={logo} alt="Company Logo" />
                     </figure>
                     <div className="inner">
                       {/* <span>Direct Hire</span> */}
@@ -114,7 +114,7 @@ const JobDetails = () => {
               <div className="job-sidebar">
                 <div className="apply-btn">
                   {appliedState?.applied ? <button onClick={()=> alreadyApplied()}>Already Applied</button> : <button onClick={() => handleApply()} >Apply</button>}
-                  
+
                 </div>
                 <div className="sidebar-widget job-discription">
                   <ul className="list">
@@ -168,7 +168,7 @@ const JobDetails = () => {
                 </div> */}
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 column">
+            {/* <div className="col-lg-12 col-md-12 col-sm-12 column">
               <div className="related-job">
                 <h2>Related Jobs</h2>
                 <div className="single-job-post">
@@ -230,7 +230,7 @@ const JobDetails = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
