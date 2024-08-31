@@ -1,4 +1,8 @@
 import React from 'react';
+import recruitMentOne from '../assets/images/resource/recruitment-1.png'
+import IconSeven from '../assets/images/icons/icon-7.png'
+import IconEight from '../assets/images/icons/icon-8.png'
+import IconNine from '../assets/images/icons/icon-9.png'
 
 const RecruitmentTechnology = () => {
   return (
@@ -7,7 +11,7 @@ const RecruitmentTechnology = () => {
         <div className="row clearfix">
           <div className="col-lg-6 col-md-12 col-sm-12 image-column">
             <figure className="image-box js-tilt clearfix">
-              <img src="/src/assets/images/resource/recruitment-1.png" alt="" />
+              <img src={recruitMentOne} alt="" />
             </figure>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -22,7 +26,7 @@ const RecruitmentTechnology = () => {
                   <div className="single-item wow fadeInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-7.png" alt="" />
+                        <img src={IconSeven} alt="" />
                       </figure>
                       <h3>
                         <span>01</span>
@@ -36,7 +40,7 @@ const RecruitmentTechnology = () => {
                   <div className="single-item wow fadeInRight animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-8.png" alt="" />
+                        <img src={IconEight} alt="" />
                       </figure>
                       <h3>
                         <span>02</span>
@@ -50,7 +54,7 @@ const RecruitmentTechnology = () => {
                   <div className="single-item wow fadeInRight animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                     <div className="inner">
                       <figure className="icon-box">
-                        <img src="/src/assets/images/icons/icon-9.png" alt="" />
+                        <img src={IconNine} alt="" />
                       </figure>
                       <h3>
                         <span>03</span>
