@@ -54,10 +54,13 @@ function Headers() {
               </NavDropdown>
               <NavDropdown title="Candidate" id="basic-nav-dropdown">
               <NavDropdown.Item href="/job-openings">Job Opening</NavDropdown.Item>
+              {isAuthenticated ?<>
               <NavDropdown.Item href="/apply">My Jobs</NavDropdown.Item>
                 <NavDropdown.Item href="/edit">Edit Profile</NavDropdown.Item>
                 <NavDropdown.Item href="/detail">Profile Detail</NavDropdown.Item>
-
+                </>
+              :null
+            }
 
               </NavDropdown>
               <Nav.Link href="/contact">Contact</Nav.Link>
