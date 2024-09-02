@@ -77,7 +77,7 @@ export const candidateSlice = createSlice({
             state.isSuccess = false
             state.candidate = null
             if(state.isError == true){
-                console.log(action)
+                // console.log(action)
                 toast.error(action.payload.response?.data?.message)
             }
         })
@@ -89,20 +89,18 @@ export const candidateSlice = createSlice({
             state.isLoading = false
             state.isSuccess = true
             state.logedCandidate = action.payload
-            if(state.isSuccess == true){
-                toast.info("User Logged In")
-                window.location.reload()
-            }
         })
         .addCase(loginCandidate.rejected,(state,action)=>{
             state.isLoading = false
             state.isError=true
             state.isSuccess = false
-            state.logedCandidate = null
+            state.logedCandidate = null  
         })
+
         .addCase(candidateProfile.pending,(state)=>{
             state.isLoading = true
         })
+        
         .addCase(candidateProfile.fulfilled,(state,action)=>{
             state.isLoading = false
             state.isSuccess = true

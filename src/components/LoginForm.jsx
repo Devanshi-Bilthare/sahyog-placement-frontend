@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Form.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { loginCandidate } from '../features/candidate/candidateSlice';
+import { toast } from 'react-toastify';
 
 const LoginForm = ({ toggleForm }) => {
     const navigate = useNavigate()
@@ -16,16 +17,26 @@ const LoginForm = ({ toggleForm }) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const candidateState = useSelector(state => state?.candidate)
+    const {isError,isSuccess} = candidateState
+
     const handleSubmit = (e) => {
         e.preventDefault();
-
        dispatch(loginCandidate(formData))
-
-        setTimeout(() => {
-            navigate('/')
-            // window.location.reload()
-        }, 1000);
+        
+           
+     
     };
+
+    useEffect(()=>{
+        if(isSuccess){
+            toast.info("User Logged In")
+            navigate('/')
+            window.location.reload()
+        }else if (isError){
+            toast.error("Invalid credientials")
+        }
+    },[isSuccess,isError])
 
     return (
         <div className="login pt-5 pb-5">

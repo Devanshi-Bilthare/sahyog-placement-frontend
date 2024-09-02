@@ -11,6 +11,7 @@ export default () => {
 
   useEffect(() => {
     dispatch(candidateProfile());
+   
   }, [dispatch]);
 
   const candidateDetails = useSelector(state => state?.candidate?.candidateProfile);
@@ -42,8 +43,8 @@ export default () => {
     tenthBoard: candidateDetails?.tenthBoard || '',
     tenthSubject: candidateDetails?.tenthSubject || '',
     tenthSchoolName: candidateDetails?.tenthSchoolName || '',
-    twoWheeler: candidateDetails?.twoWheeler || '',
-    drivingLicense: candidateDetails?.drivingLicense || '',
+    twoWheelerAvailable: candidateDetails?.twoWheelerAvailable,
+    drivingLicense: candidateDetails?.drivingLicense,
   });
 
   useEffect(() => {
@@ -74,8 +75,8 @@ export default () => {
       tenthBoard: candidateDetails?.tenthBoardName || '',
       tenthSubject: candidateDetails?.tenthSubject || '',
       tenthSchoolName: candidateDetails?.tenthSchoolName || '',
-      twoWheeler: candidateDetails?.twoWheelerAvailable || '',
-      drivingLicense: candidateDetails?.drivingLicense || '',
+      twoWheelerAvailable: candidateDetails?.twoWheelerAvailable,
+      drivingLicense: candidateDetails?.drivingLicense,
     });
   }, [candidateDetails]);
 
@@ -90,6 +91,9 @@ export default () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(editCandidate({candidateData:formData,id:candidateDetails?._id}));
+   setTimeout(() => {
+     window.location.reload()
+   }, 1000);
     // Perform any other actions on submit
   };
 
@@ -447,31 +451,37 @@ export default () => {
 
             <h5 className="mt-4">Additional Details</h5>
             <Row>
-              <Col md={4} className="mb-3">
-                <Form.Group id="twoWheeler">
-                  <Form.Label>Two-Wheeler License</Form.Label>
-                  <Form.Control  
-                    type="text" 
-                    placeholder="Enter Two-Wheeler License Details" 
-                    name="twoWheeler"
-                    value={formData.twoWheeler} 
-                    onChange={handleInputChange} 
-                  />
-                </Form.Group>
-              </Col>
-              <Col md={4} className="mb-3">
-                <Form.Group id="drivingLicense">
-                  <Form.Label>Driving License</Form.Label>
-                  <Form.Control  
-                    type="text" 
-                    placeholder="Enter Driving License Details" 
-                    name="drivingLicense"
-                    value={formData.drivingLicense} 
-                    onChange={handleInputChange} 
-                  />
-                </Form.Group>
-              </Col>
-            </Row>
+  <Col md={4} className="mb-3">
+    <Form.Group id="twoWheelerAvailable">
+      <Form.Label>Two-Wheeler License</Form.Label>
+      <Form.Select
+        name="twoWheelerAvailable"
+        value={formData.twoWheelerAvailable}
+        onChange={handleInputChange}
+      >
+        <option value="">Select an option</option>
+        <option value={true}>Yes</option>
+        <option value={false}>No</option>
+      </Form.Select>
+    </Form.Group>
+  </Col>
+  <Col md={4} className="mb-3">
+    <Form.Group id="drivingLicense">
+      <Form.Label>Driving License</Form.Label>
+      <Form.Select
+        name="drivingLicense"
+        value={formData.drivingLicense}
+        onChange={handleInputChange}
+        required
+      >
+        <option value="">Select an option</option>
+        <option value={true}>Yes</option>
+        <option value={false}>No</option>
+      </Form.Select>
+    </Form.Group>
+  </Col>
+</Row>
+
 
             <div className="mt-3">
               <Button variant="primary" type="submit">Edit Candidate Details</Button>
