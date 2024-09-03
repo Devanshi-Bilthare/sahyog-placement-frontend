@@ -78,9 +78,9 @@ function Headers() {
                   <Nav.Link
                     id="radio"
                     className="btn btn-primary text-center"
-                    href="/register"
+                    href="/login"
                   >
-                    Register
+                    Login
                   </Nav.Link>
                 )}
               </div>

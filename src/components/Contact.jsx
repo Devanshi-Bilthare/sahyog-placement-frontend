@@ -84,7 +84,7 @@ const Contact = () => {
                                             <div className="inner">
                                                 <h4>Call or Email</h4>
                                                 <p>
-                                                    <Link to="tel:+912345678900">+91 234 567 8900</Link><br />
+                                                    <Link to="tel:+919111505881">+91 9111505881</Link><br />
                                                     <Link to="mailto:info@sahyogplacement.com">info@sahyogplacement.com</Link>
                                                 </p>
                                             </div>

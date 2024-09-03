@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { applyJob, getSingleJob, isAlreadyApplied } from "../features/job/jobSlice";
 import { isLoggedIn } from "../utils/config";
 import { toast } from "react-toastify";
@@ -140,7 +140,8 @@ const JobDetails = () => {
                     </li>
                     <li>
                       <span>Contact Number</span>
-                      <p>8876545675</p>
+                      <Link to="tel:+919111505882">+91 9111505882</Link>  <br />
+                      <Link to="tel:+919111505881">+91 9111505881</Link>
                     </li>
                   </ul>
                 </div>

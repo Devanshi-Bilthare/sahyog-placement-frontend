@@ -56,7 +56,7 @@ const Footer = () => {
                   </div>
                   <ul className="links-list clearfix">
                     <li>
-                      <a href="">About Us</a>
+                      <a href="/about">About Us</a>
                     </li>
                     <li>
                       <a href="">Resources</a>
@@ -68,13 +68,13 @@ const Footer = () => {
                       <a href="">Testimonials</a>
                     </li>
                     <li>
-                      <a href="">Employers</a>
+                      <a href="/placejob">Employers</a>
                     </li>
                     <li>
                       <a href="">How It’s Work</a>
                     </li>
                     <li>
-                      <a href="">Job Seekers</a>
+                      <a href="/job-openings">Job Openings</a>
                     </li>
                     <li>
                       <a href="">Industries</a>
@@ -96,14 +96,20 @@ const Footer = () => {
                     </div>
                     <ul className="info-box clearfix">
                       <li>
-                        <a href="tel:8004561234">(800) 456-1234</a>
+                        <a href="tel:+919111505882">+91 9111505882</a> 
+                        </li>
+                        <li>
+                        <a href="tel:+919111505881">+91 9111505881</a>
+                        </li>
+                        <li>
+                        <a href="tel:0755-4922276">0755-4922276</a>
                       </li>
                       <li>
-                        <a href="mailto:businesspartner@example.com">businesspartner@example.com</a>
+                        <a href="mailto:info@sahyogplacement.com">info@sahyogplacement.com</a>
                       </li>
                     </ul>
                   </div>
-                  <div className="single-info-box">
+                  {/* <div className="single-info-box">
                     <div className="widget-title">
                       <h3>For Employees</h3>
                     </div>
@@ -115,7 +121,7 @@ const Footer = () => {
                         <a href="mailto:careeroption@example.com">careeroption@example.com</a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
