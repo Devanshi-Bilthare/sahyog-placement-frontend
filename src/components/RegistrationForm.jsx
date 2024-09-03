@@ -145,6 +145,7 @@ useEffect(()=>{
                 required
                 className="w-100 border p-2"
               >
+                <option value="Male">select gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Others">Others</option>
