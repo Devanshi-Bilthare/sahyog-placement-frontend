@@ -66,10 +66,10 @@ export const candidateSlice = createSlice({
             state.isLoading = false
             state.isSuccess = true
             state.candidate = action.payload
-            // if(state.isSuccess == true){
-            //     toast.info("User Created successfully")
-            //     window.location.reload()
-            // }
+            if(state.isSuccess == true){
+                toast.info("User Created successfully")
+                window.location.reload()
+            }
         })
         .addCase(registerCandidate.rejected,(state,action)=>{
             state.isLoading = false

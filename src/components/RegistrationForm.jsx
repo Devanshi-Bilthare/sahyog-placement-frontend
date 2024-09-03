@@ -78,7 +78,7 @@ const {isError,isSuccess} = candidateState
 
 useEffect(()=>{
   if(isSuccess){
-      toast.info("User registered successfully")
+      // toast.info("User registered successfully")
       navigate('/')
       window.location.reload()
   }else if (isError){
