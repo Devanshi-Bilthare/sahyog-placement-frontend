@@ -66,7 +66,7 @@ const ApplyNow = () => {
               <p>Your Staffing Needs are Unique and Always Evolving</p>
             </div>
             <ul className="bread-crumb clearfix">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="">Home</a></li>
               <li>Job Seekers</li>
               <li>Apply Now</li>
             </ul>
@@ -149,7 +149,7 @@ const ApplyNow = () => {
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 form-column">
-              <form action="https://st.ourhtmldemo.com/new/Eazyrecruitz/index.html" method="post" className="apply-form" onSubmit={handleSubmit}>
+              <form action="https://st.ourhtmldemo.com/new/Eazyrecruitz/" method="post" className="apply-form" onSubmit={handleSubmit}>
                 <div className="row clearfix">
                   <div className="col-lg-6 col-md-6 col-sm-12 form-group">
                     <input type="text" name="jobNumber" placeholder="Job Number*" required onChange={handleJobDetailsChange} />
@@ -182,28 +182,28 @@ const ApplyNow = () => {
         <div className="outer-container">
           <div className="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo13} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo13} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo14} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo14} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo15} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo15} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo16} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo16} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo17} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo17} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
             <figure className="clients-logo-box">
-              <a href="index.html"><img src={clientLogo18} alt="" /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={clientLogo18} alt="" /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
           </div>
         </div>

@@ -47,7 +47,7 @@ const ProcessSection = () => {
                 <div className="lower-content">
                   <h3>Initial Consultation</h3>
                   <p>We start by understanding your needs and setting clear objectives.</p>
-                  <a href="index.html">Learn More</a>
+                  <a href="">Learn More</a>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ const ProcessSection = () => {
                 <div className="lower-content">
                   <h3>Strategic Planning</h3>
                   <p>Our team crafts a tailored strategy to address your recruitment needs efficiently.</p>
-                  <a href="index.html">Learn More</a>
+                  <a href="">Learn More</a>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const ProcessSection = () => {
                 <div className="lower-content">
                   <h3>Execution & Follow-up</h3>
                   <p>We implement the strategy and provide ongoing support to ensure success.</p>
-                  <a href="index.html">Learn More</a>
+                  <a href="">Learn More</a>
                 </div>
               </div>
             </div>

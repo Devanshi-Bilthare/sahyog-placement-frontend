@@ -27,22 +27,22 @@ const Footer = () => {
                       <h5>Connected:</h5>
                     </li>
                     <li>
-                      <a href="index.html">
+                      <a href="">
                         <i className="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="index.html">
+                      <a href="">
                         <i className="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="index.html">
+                      <a href="">
                         <i className="fab fa-google-plus-g"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="index.html">
+                      <a href="">
                         <i className="fab fa-youtube"></i>
                       </a>
                     </li>
@@ -56,34 +56,34 @@ const Footer = () => {
                   </div>
                   <ul className="links-list clearfix">
                     <li>
-                      <a href="index.html">About Us</a>
+                      <a href="">About Us</a>
                     </li>
                     <li>
-                      <a href="index.html">Resources</a>
+                      <a href="">Resources</a>
                     </li>
                     <li>
-                      <a href="index.html">Our Solutions</a>
+                      <a href="">Our Solutions</a>
                     </li>
                     <li>
-                      <a href="index.html">Testimonials</a>
+                      <a href="">Testimonials</a>
                     </li>
                     <li>
-                      <a href="index.html">Employers</a>
+                      <a href="">Employers</a>
                     </li>
                     <li>
-                      <a href="index.html">How It’s Work</a>
+                      <a href="">How It’s Work</a>
                     </li>
                     <li>
-                      <a href="index.html">Job Seekers</a>
+                      <a href="">Job Seekers</a>
                     </li>
                     <li>
-                      <a href="index.html">Industries</a>
+                      <a href="">Industries</a>
                     </li>
                     <li>
-                      <a href="index.html">Leadership</a>
+                      <a href="">Leadership</a>
                     </li>
                     <li>
-                      <a href="index.html">Contact Us</a>
+                      <a href="">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -137,18 +137,18 @@ const Footer = () => {
         <div className="footer-bottom clearfix">
           <div className="copyright pull-left">
             <p>
-              &copy; 2020 <a href="index.html">Eazy Recruitz</a>, All Rights Reserved.
+              &copy; 2020 <a href="">Eazy Recruitz</a>, All Rights Reserved.
             </p>
           </div>
           <ul className="footer-nav pull-right clearfix">
             <li>
-              <a href="index.html">Privacy Policy</a>
+              <a href="">Privacy Policy</a>
             </li>
             <li>
-              <a href="index.html">Terms & Conditions</a>
+              <a href="">Terms & Conditions</a>
             </li>
             <li>
-              <a href="index.html">Site Map</a>
+              <a href="">Site Map</a>
             </li>
           </ul>
         </div>

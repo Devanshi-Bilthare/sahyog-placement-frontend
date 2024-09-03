@@ -25,8 +25,8 @@ const ClientsSection = () => {
         <OwlCarousel className="clients-carousel owl-theme" loop margin={10} items={6} dots={false} nav={false}>
           {clientLogos.map((logo, index) => (
             <figure className="clients-logo-box" key={index}>
-              <a href="index.html"><img src={logo} alt={`Client Logo ${index + 1}`} /></a>
-              <span className="logo-title"><a href="index.html">Visit Website</a></span>
+              <a href=""><img src={logo} alt={`Client Logo ${index + 1}`} /></a>
+              <span className="logo-title"><a href="">Visit Website</a></span>
             </figure>
           ))}
         </OwlCarousel>

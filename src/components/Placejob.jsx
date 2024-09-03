@@ -73,7 +73,7 @@ const PlaceJob = () => {
                             <p>Our Team Moves Faster, Keeping you Current on What's Hot</p>
                         </div>
                         <ul className="bread-crumb clearfix">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Home</a></li>
                             <li>Employers</li>
                             <li>Place Job Order</li>
                         </ul>

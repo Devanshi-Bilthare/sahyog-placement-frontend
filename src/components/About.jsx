@@ -22,7 +22,7 @@ const About = () => {
                             <p>Your Trusted Partner for Recruitment Solutions in Mumbai</p>
                         </div>
                         <ul className="bread-crumb clearfix">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Home</a></li>
                             <li>About</li>
                             <li>About Us</li>
                         </ul>
@@ -64,12 +64,12 @@ const About = () => {
                                             <div className="author-text">
                                                 <h3>Empowering Your Hiring Process</h3>
                                             </div>
-                                            <div className="author-info">
+                                            {/* <div className="author-info">
                                                 <figure className="author-thumb"><img src={authorThumb} alt="Founder" /></figure>
                                                 <h4>Amit Sharma</h4>
                                                 <span className="designation">Founder & CEO</span>
                                                 <figure className="signature"><img src={signatureImage} alt="Signature" /></figure>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>

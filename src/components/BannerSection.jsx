@@ -28,7 +28,7 @@ const BannerSection = () => {
                   <h1>Collaborating <br />With You to Fulfill <br />Your HR Needs.</h1>
                   <p>Through our partnership, your goals become reality.</p>
                   <div className="btn-box">
-                    <a href="index.html" className="theme-btn-two">Learn More</a>
+                    <a href="" className="theme-btn-two">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@ const BannerSection = () => {
                   <h1>Shining a Light on Your HR <br />and Employment Law Issues</h1>
                   <p>By way of us you can achieve what you want.</p>
                   <div className="btn-box">
-                    <a href="index.html" className="theme-btn-two">Learn More</a>
+                    <a href="" className="theme-btn-two">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const BannerSection = () => {
                   <h1>Sahyog Placement <br />Provides Employment Opportunities</h1>
                   <p>With our help, your aspirations turn into reality.</p>
                   <div className="btn-box">
-                    <a href="index.html" className="theme-btn-two">Learn More</a>
+                    <a href="" className="theme-btn-two">Learn More</a>
                   </div>
                 </div>
               </div>

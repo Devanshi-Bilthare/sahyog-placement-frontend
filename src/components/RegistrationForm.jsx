@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Form.css";
 import { Link, useNavigate } from "react-router-dom";
-import {useDispatch}from 'react-redux'
+import {useDispatch, useSelector}from 'react-redux'
 import { registerCandidate } from "../features/candidate/candidateSlice";
+import { toast } from "react-toastify";
 
 const RegistrationForm = ({ toggleForm }) => {
   const dispatch = useDispatch()
@@ -66,15 +67,24 @@ const RegistrationForm = ({ toggleForm }) => {
         formDataToSend.append(key, formData[key]);
     });
 
-    try {
-        await dispatch(registerCandidate(formDataToSend)); // Ensure this action handles FormData
-        navigate('/');
-        // window.location.reload()
-    } catch (error) {
-        console.error('Error submitting form:', error);
-    }
+ 
+    await dispatch(registerCandidate(formDataToSend)); 
+ 
+ 
+       
 };
+const candidateState = useSelector(state => state?.candidate)
+const {isError,isSuccess} = candidateState
 
+useEffect(()=>{
+  if(isSuccess){
+      // toast.info("User Logged In")
+      navigate('/')
+      window.location.reload()
+  }else if (isError){
+      // toast.error("Something went wrong")
+  }
+},[isSuccess,isError])
   return (
     <div className="Register pt-5 pb-5">
       <div className="form-container shadow-lg " id="register-form">
@@ -103,9 +113,14 @@ const RegistrationForm = ({ toggleForm }) => {
 
                 value={formData.mobile}
                 onChange={handleChange}
+                 pattern="^\d{10}$"
                 required
               />
+               {formData.mobile && formData.mobile.length !== 10 && (
+    <small className="text-danger">Mobile number must be 10 digits.</small>
+  )}
             </div>
+           
           </div>
           <div className="d-flex">
             <div className="form-group w-100 mr-3">

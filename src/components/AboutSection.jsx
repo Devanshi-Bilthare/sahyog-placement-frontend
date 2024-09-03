@@ -30,7 +30,7 @@ const AboutSection = () => {
                     <h3>
                       Educational Resources <br /> for Job Seekers
                     </h3>
-                    <a href="index.html">
+                    <a href="">
                       Guides & E-books<i className="flaticon-direct-download"></i>
                     </a>
                   </div>
@@ -52,7 +52,7 @@ const AboutSection = () => {
                     </p>
                   </div>
                   <div className="link">
-                    <a href="index.html">
+                    <a href="">
                       <i className="flaticon-right-arrow"></i>Discover More About Us
                     </a>
                   </div>
@@ -60,7 +60,7 @@ const AboutSection = () => {
                     <div className="author-text">
                       <h3>A Pathway for Employers and Job Seekers Alike</h3>
                     </div>
-                    <div className="author-info">
+                    {/* <div className="author-info">
                       <figure className="author-thumb">
                         <img src={authorThumb} alt="Author" />
                       </figure>
@@ -69,7 +69,7 @@ const AboutSection = () => {
                       <figure className="signature">
                         <img src={signatureImage} alt="Signature" />
                       </figure>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

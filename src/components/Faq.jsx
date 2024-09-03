@@ -24,7 +24,7 @@ const Faq = () => {
                             <p>Things You Need to Know and We Know You Need</p>
                         </div>
                         <ul className="bread-crumb clearfix">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Home</a></li>
                             <li>Employers</li>
                             <li>FAQ’S</li>
                         </ul>
@@ -83,28 +83,28 @@ const Faq = () => {
                     <div className="title-inner centred">
                         <h2>Need of Highly Qualified HR Personnel or Employment Opportunities</h2>
                         <div className="btn-box">
-                            <a href="index-2.html" className="btn-one">Hire</a>
-                            <a href="index-2.html" className="btn-two">Apply</a>
+                            <a href="index-" className="btn-one">Hire</a>
+                            <a href="index-" className="btn-two">Apply</a>
                         </div>
                     </div>
                     <div className="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-7.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-7.png" alt="" /></a>
                         </figure>
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-8.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-8.png" alt="" /></a>
                         </figure>
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-9.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-9.png" alt="" /></a>
                         </figure>
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-10.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-10.png" alt="" /></a>
                         </figure>
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-11.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-11.png" alt="" /></a>
                         </figure>
                         <figure className="clients-logo-box">
-                            <a href="index.html"><img src="/src/assets/images/clients/clients-logo-12.png" alt="" /></a>
+                            <a href=""><img src="/src/assets/images/clients/clients-logo-12.png" alt="" /></a>
                         </figure>
                     </div>
                 </div>

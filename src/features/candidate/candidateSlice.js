@@ -66,10 +66,10 @@ export const candidateSlice = createSlice({
             state.isLoading = false
             state.isSuccess = true
             state.candidate = action.payload
-            if(state.isSuccess == true){
-                toast.info("User Created successfully")
-                window.location.reload()
-            }
+            // if(state.isSuccess == true){
+            //     toast.info("User Created successfully")
+            //     window.location.reload()
+            // }
         })
         .addCase(registerCandidate.rejected,(state,action)=>{
             state.isLoading = false
@@ -100,7 +100,7 @@ export const candidateSlice = createSlice({
         .addCase(candidateProfile.pending,(state)=>{
             state.isLoading = true
         })
-        
+
         .addCase(candidateProfile.fulfilled,(state,action)=>{
             state.isLoading = false
             state.isSuccess = true
@@ -149,19 +149,19 @@ export const candidateSlice = createSlice({
             state.isLoading = false
             state.isSuccess = true
             state.editedCandidate = action.payload
-            // if(state.isSuccess == true){
-            //     toast.info("User Created")
-            // }
+            if(state.isSuccess == true){
+                toast.info("Profile edited")
+            }
         })
         .addCase(editCandidate.rejected,(state,action)=>{
             state.isLoading = false
             state.isError=true
             state.isSuccess = false
             state.editedCandidate = null
-            // if(state.isError == true){
+            if(state.isError == true){
             //     console.log(action)
-            //     toast.error(action.payload.response.data.message)
-            // }
+                toast.error(action.payload.response.data.message)
+            }
         })
 
         // .addCase(resetState,()=> initialState)

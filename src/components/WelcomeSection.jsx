@@ -71,7 +71,7 @@ const WelcomeSection = () => {
                                                     </li>
                                                 </ul>
                                                 <div className="link">
-                                                    <a href="index.html"><i className="flaticon-right-arrow"></i>Your Required Talent</a>
+                                                    <a href=""><i className="flaticon-right-arrow"></i>Your Required Talent</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@ const WelcomeSection = () => {
                                                     </li>
                                                 </ul>
                                                 <div className="link">
-                                                    <a href="index.html"><i className="flaticon-right-arrow"></i>Find the Talent You Need</a>
+                                                    <a href=""><i className="flaticon-right-arrow"></i>Find the Talent You Need</a>
                                                 </div>
                                             </div>
                                         </div>
